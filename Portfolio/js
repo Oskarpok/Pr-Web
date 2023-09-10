@@ -1,0 +1,16 @@
+function odliczanie()
+{
+    var dzisiaj = new Date();
+
+    var godzina = dzisiaj.getHours();
+    if(godzina<10)godzina = "0"+godzina;
+
+    var minuta = dzisiaj.getMinutes();
+    if(minuta<10)minuta = "0"+minuta;
+
+    var sekundy = dzisiaj.getSeconds();
+    if(sekundy<10)sekundy = "0"+sekundy;
+
+    document.getElementById("zegar").innerHTML = godzina+":"+minuta+":"+sekundy;
+    setTimeout("odliczanie()",1000)
+}
