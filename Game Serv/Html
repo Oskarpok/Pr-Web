@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrogranie</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/fontello.css" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    
+<script src="jquery-1.11.3.min.js"></script>
+	
+<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+
+
+</head>
+
+<body>
+    
+    <div class="wrapper">
+
+        <div class="header">
+
+            <div class="logo"> <img src="Slajd1.png" height="40" width="40" style="float: left; margin: 10px;" > 
+                <span style="color: #c34f4f;">retro</span>granie.com</div>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="nav">
+
+            <ol>
+
+                <li><a href="#">Strona gluwna</a></li>
+                <li><a href="#">Klasyki NES</a>
+                    <ul>
+                        <li> <a href="#">Contra</a></li>
+                        <li> <a href="#">Mario Bros</a></li>
+                        <li> <a href="#">Duck Tales</a></li>
+                        <li> <a href="#">Legend of selda</a></li>
+                    </ul>
+                </li>
+                    
+                <li><a href="#">Gry filmowe</a>
+                    <ul>
+                        <li> <a href="#">Home Alone</a></li>
+                        <li> <a href="#">Dick Tracy</a></li>
+                        <li> <a href="#">The imson</a></li>
+                        <li> <a href="#">Top Gun</a></li>
+                    </ul>
+                </li>
+                    
+                <li><a href="#">Bijatyki</a>
+                    <ul>
+                        <li> <a href="#">Mortal Kombad</a></li>
+                        <li> <a href="#">Nekketsu KD</a></li>
+                        <li> <a href="#">Double Dragon</a></li>
+                        <li> <a href="#">Turtles T</a></li>
+                    </ul>
+                </li>
+                    
+                    
+                <li><a href="#">Gry sportowe</a>
+                    <ul>
+                        <li> <a href="#">Goal 3</a></li>
+                        <li> <a href="#">Excitebike</a></li>
+                        <li> <a href="#">Ike Ike hockey</a></li>
+                        <li> <a href="#">Tenis</a></li>
+                    </ul>
+                </li>
+                    
+                <li><a href="#">O autorach</a></li>
+
+            </ol>
+
+        </div>
+
+        <div class="content">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada, orci eget 
+            ultrices gravida, velit mi suscipit neque, a maximus sem turpis vitae lectus. Class 
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+            Nulla mollis et neque bibendum malesuada. Vivamus vel tellus eu lectus scelerisque 
+            mattis in vel libero. Fusce at tellus mattis, tincidunt elit id, lobortis ipsum. Aenean 
+            dictum hendrerit sodales. Nam placerat, eros at tristique accumsan, neque lacus 
+            pellentesque tellus, ac tempor ante purus quis quam. Fusce mi tortor, tempus sit amet 
+            metus quis, egestas eleifend magna. Suspendisse potenti. Aenean non elementum ante, nec 
+            iaculis nisl. Praesent laoreet nisi ac leo pellentesque volutpat. Morbi orci nunc, 
+            rutrum vel mollis vel, fringilla sit amet purus. Sed scelerisque tincidunt est, et 
+            sodales lacus congue ac. Suspendisse sollicitudin est massa. Integer porta ex ipsum.</p>
+
+            <p>Nunc accumsan, est sed porta volutpat, est nisl porta dui, non lacinia purus tortor et 
+            nunc. Curabitur vitae suscipit diam. Proin eget neque fermentum, viverra justo sed, 
+            venenatis ante. Nulla efficitur porttitor diam a aliquam. Curabitur eget sollicitudin 
+            orci. Proin ornare velit vel porta scelerisque. Suspendisse luctus sollicitudin sem, 
+            a blandit felis rhoncus sit amet. Sed malesuada est ut dolor posuere, sed egestas purus 
+            hendrerit. Nunc fringilla tincidunt augue id convallis. Aenean ultrices turpis id felis 
+            faucibus, in consequat dolor placerat. Fusce lobortis at nibh eu sodales. Nullam est 
+            nunc, dignissim nec mattis et, porta nec velit. Sed ut tortor augue. Curabitur eget 
+            velit tortor.</p>
+
+            <p>Pellentesque tempus enim ut varius vehicula. Sed bibendum vehicula ornare. Quisque 
+            scelerisque suscipit enim, vitae molestie orci commodo eget. Donec ultricies sem mi, 
+            ac posuere lectus convallis sit amet. Nulla non venenatis nisi. Quisque justo ante, 
+            varius dictum nibh a, dignissim rhoncus purus. Integer malesuada congue convallis. 
+            Nulla est elit, aliquam ut condimentum quis, bibendum sit amet turpis. Morbi elementum 
+            nisl at quam bibendum sodales. Nullam blandit augue tristique, sollicitudin ex a, 
+            commodo lacus. Pellentesque nec purus nunc. Donec tristique nibh varius erat accumsan, 
+            efficitur posuere arcu accumsan. Nulla ut laoreet justo. Morbi quis dui tristique, 
+            sodales nisi eu, venenatis dolor. Donec non congue tortor. Maecenas augue dui, imperdiet
+            ac porttitor sed, lacinia sit amet nisi.</p>
+
+            <p>Donec bibendum luctus diam. Phasellus rutrum semper purus, id vestibulum sapien 
+            venenatis vitae. Phasellus ut lectus sit amet neque elementum bibendum. Etiam in 
+            pharetra lacus. Mauris vestibulum risus consectetur dolor fermentum hendrerit. 
+            Mauris convallis dui facilisis felis dictum, vitae aliquet lorem porta. Proin ac 
+            ligula ac erat laoreet sagittis non eu eros. Morbi convallis, purus feugiat consequat 
+            congue, sem mauris hendrerit felis, non porttitor magna risus quis sem. In hac 
+            habitasse platea dictumst. Quisque semper ut tellus in pellentesque.</p> 
+
+            <p>Fusce non est in diam maximus suscipit a eu sapien. Aenean at orci odio. Vivamus tempus 
+            imperdiet urna in tempus. Vivamus et vulputate nibh. Sed sodales, tortor at tristique 
+            rhoncus, nibh lorem pulvinar metus, et suscipit nisi neque non odio. Praesent dictum 
+            est turpis, eget dapibus leo tincidunt ac. Duis tristique convallis dui vel placerat. 
+            Integer magna leo, bibendum eget sem accumsan, lacinia molestie est. Suspendisse 
+            sagittis, nisl eu lacinia auctor, eros libero sagittis leo, volutpat dignissim lorem 
+            metus ac eros. Aliquam at tempor turpis. Pellentesque habitant morbi tristique senectus 
+            et netus et malesuada fames ac turpis egestas. Nulla facilisi.</p> 
+
+        </div>
+
+        <div class="socials">
+
+            <div class="socialdivs">
+
+                <div class="fb"> <i class="icon-facebook"></i> </div>
+                <div class="yt"> <i class="icon-youtube"></i> </div>
+                <div class="tw"> <i class="icon-twitter"></i> </div>
+                <div class="gplus"> <i class="icon-gplus"></i> </div>
+                <div style="clear: both;"></div>
+            
+            </div>
+
+        </div>
+
+        <div class="footer">
+            retrogranie.com &copy; 2015 thanks you for you visit mario but our pincee is in other castle ;-)
+        </div>
+        
+    </div>
+
+</body>
+</html>
