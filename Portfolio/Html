@@ -1,1 +1,64 @@
-fgdfg
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oskar Pokropiński - Portfolio</title>
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="junior developer">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/fontello.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:ital,wght@0,400;0,900;1,700&display=swap" rel="stylesheet">
+    <script src="timer.js" ></script>
+</head>
+
+<body onload="odliczanie()">
+    
+    <div id="container">
+
+        <div class="rectangle">
+
+            <a href="index.html" class="tilelink"> <div id="logo">Oskar Pokropiński</div> </a>
+            <div id="zegar">12:00:00</div>
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div class="square">
+
+            <a href="profilosobisty.html" class="tilelink"> <div class="tile1"> <i class="icon-user"></i> <br> Profil osobisty </div> </a> 
+            <a href="cooferuje.html" class="tilelink"> <div class="tile1"> <i class="icon-laptop"></i> <br> Co oferuję </div> </a>
+            <div style="clear: both;"></div>
+
+            <a href="mojecv.html" class="tilelink"> <div class="tile2"> <i class="icon-graduation-cap-1"> </i> <br> Moje CV </div> </a>
+            <a href="kontakt.html" class="tilelink"> <div class="tile3"> <i class="icon-mail"></i> <br> Kontakt </div> </a>
+            <div style="clear: both;"></div>
+
+            <div class="tile4"> “Talk is cheap. Show me the code.”  Linus Torvalds </div>
+
+        </div>
+
+        <div class="square">
+
+            <div class="tile5">Tytul pod strony <br><br> 
+            
+            
+            </div>
+            <a href="https://www.youtube.com" target="_blank" class="tilelink"> <div class="yt"> <i class="icon-youtube"></i> </div> </a>
+            <a href="https://pl-pl.facebook.com" target="_blank" class="tilelink"> <div class="fb"> <i class="icon-facebook"></i> </div> </a>
+            <a href="https://support.google.com" target="_blank" class="tilelink"> <div class="gplus"> <i class="icon-gplus"></i> </div> </a>
+            <a href="https://twitter.com" target="_blank" class="tilelink"> <div class="tw"> <i class="icon-twitter"></i> </div> </a>
+            <div style="clear: both;"></div>
+           
+        </div>
+        <div style="clear: both;"></div>
+
+        <div class="rectangle" style="margin-top: 50px;">
+            Oskar Pokropiński junior developer<br>Kontakt oskar43619@wp.pl <i class="icon-mail-alt"></i> 
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
