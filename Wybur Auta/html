@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	
+	<header>
+		<h1>Spersonalizuj swój samochud</h1>
+
+	</header>
+
+	<main>
+
+		<article>
+			<form action="order.php" method="post">
+					<div class="row">
+					
+						<fieldset>
+							<legend>Rodzaj Nadwozia</legend>
+							<div><label> <input type="radio" value="1" name="nadwozie" checked> Hatchback</label></div>
+							<div><label> <input type="radio" value="2" name="nadwozie"> Kabriolet</label></div>
+							<div><label> <input type="radio" value="3" name="nadwozie"> Kombi</label></div>
+						</fieldset>
+		
+				</div>
+
+				<div class="row">
+					<label for="silnik">Rodzaj silnika</label>
+					<select id="silnik" name="silnik">
+
+						<option value="SW">Silnik wysokoprężny</option>
+						<option value="SB" selected>Silnik benynowy</option>
+						<option value="SE">Silnik elektryczny</option>
+						<option value="SH">Silnik hybrydowy</option>
+
+					</select>
+				</div>
+
+				<div class="row">
+
+					<fieldset>
+						<legend>Wyposażenie samochodu</legend>
+
+						<div class="col">
+							<div><label><input type="checkbox" checked disabled value="1" name="wyp[]"> klimatyzacja </label></div>
+							<div><label><input type="checkbox" checked disabled  value="2" name="wyp[]"> systemy:ESP i ABS </label></div>
+							<div><label><input type="checkbox"  value="3" name="wyp[]"> skórzana tapicerka </label></div>
+							<div><label><input type="checkbox"  value="4" name="wyp[]"> tempomat </label></div>
+						</div>
+
+						<div class="col">
+							<div><label><input type="checkbox"  value="5" name="wyp[]"> spojler dachowy </label></div>
+							<div><label><input type="checkbox"  value="6" name="wyp[]"> radio z bluetooth </label></div>
+							<div><label><input type="checkbox"  value="7" name="wyp[]"> reflektory przeciwmgielne </label></div>
+							<div><label><input type="checkbox"  value="8" name="wyp[]"> przycemniane tylnie szyby </label></div>
+						</div>
+
+						<div class="col">
+							<div><label><input type="checkbox"  value="9" name="wyp[]"> czujniki parkowania </label></div>
+							<div><label><input type="checkbox"  value="10" name="wyp[]"> podgrzewane fotele </label></div>
+							<div><label><input type="checkbox"  value="11" name="wyp[]"> składane lusterka </label></div>
+							<div><label><input type="checkbox"  value="12" name="wyp[]"> światła LED do jazdy dziennej </label></div>
+						</div>	
+
+					</fieldset>
+
+				</div>
+
+				<div class="row">
+					<label for="Zapachy">Rodzaje zapachów</label>
+					<div style="margin-top: 10px;">
+						<select id="Zapachy" name="Zapachy[]" multiple size="4">
+
+							<option value="ZK">Kokosowa</option>
+							<option value="ZC" selected>Cytrynowa</option>
+							<option value="ZT">Truskawkowa</option>
+							<option value="ZB">Brzoskwiniowa</option>
+
+						</select>
+					</div>
+				</div>
+			
+				<div class="row">
+
+					<label>Imie<input type="text" name="imie"></label>
+					<label>Nazwisko<input type="password" name="hasło"></label>
+					<label for="salony">W którym salonie chcesz odebrać auto
+						<input type="search" name="salony" list="salony">
+						<datalist id="salony">
+							<option value="Salon Warzawa">
+							<option value="Salon Wrocław">
+							<option value="Salon Gdańsk">
+						</datalist>
+					</label>
+
+				</div>
+
+				<div class="row">
+					<label>Ile kluczyków<input type="number" step="1" name="kluczyk" min="1" value="1"></label>
+				</div>
+
+				<div class="row">
+					<input type="submit" value="Złóż zamówienie">
+				</div>
+
+			</form>
+		</article>
+	</main>
+
+</body>
+</html>
