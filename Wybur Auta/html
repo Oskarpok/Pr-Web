@@ -20,7 +20,7 @@
 	<main>
 
 		<article>
-			<form action="order.php" method="post">
+			<form action="order.php" method="post" enctype="multipart/form-data">
 					<div class="row">
 					
 						<fieldset>
@@ -90,10 +90,10 @@
 			
 				<div class="row">
 
-					<label>Imie<input type="text" name="imie"></label>
-					<label>Nazwisko<input type="password" name="hasło"></label>
+					<label>Imie<input type="text" name="imie" required></label>
+					<label>Nazwisko<input type="password" name="hasło" required></label>
 					<label for="salony">W którym salonie chcesz odebrać auto
-						<input type="search" name="salony" list="salony">
+						<input type="search" name="salony" list="salony" required>
 						<datalist id="salony">
 							<option value="Salon Warzawa">
 							<option value="Salon Wrocław">
@@ -108,7 +108,45 @@
 				</div>
 
 				<div class="row">
+					<label>Adres e-mail<input type="email" name="adres" required></label> 
+					<label>Telefon<input type="tel" name="telefon" required></label> 
+				</div>
+
+				<div class="row">
+					<label>Data dostawy<input type="date" name="dzien" min="2024-01-01" max="2024-12-31"></label> 
+					<label>Preferowany czas dostawy <input type="time" name="czas" step="1" min="09:00" max="18:00"></label> 
+				</div>
+
+				<div class="row">
+					<div><label for="komentarz">Uwagi do zamówienia</label></div>
+					<textarea name="komentarz" id="komentarz" rows="4" cols="80" maxlength="300"></textarea>
+				</div>
+
+				<div class="row">
+					<label>Przeslij zdjęcie poprzedniego samochodu jako pierwowzur</label><input type="file" name="obraz" accept="image/x-png,iage/gif,image/jpeg">
+				</div>
+
+				<div class="row">
+					<label>Kolor lakieru<input type="color" name="Kolor" value="#ff0000" required></label>
+				</div>
+
+				<div class="row">
+					<label>Stopien realizacji zamówienia</label> <progress id="postep" max="100" value="75"></progress>
+				</div>
+
+				<div class="row">
+					<label>Ilość paliwa w balu</label><meter min="0" max="100" title="%" value="40" low="30" high="70" optimum="75"></meter>
+				</div>
+
+				<div class="row">
+					<label>Twoja strona www</label><input type="url" name="witryna">
+				</div>
+
+				<input type="hidden" name="token" value="eertetetetetet">
+
+				<div class="row">
 					<input type="submit" value="Złóż zamówienie">
+					<input type="reset" value="Wyczysc formulasz zamówienia">
 				</div>
 
 			</form>
