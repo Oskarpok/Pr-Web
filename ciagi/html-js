@@ -171,7 +171,7 @@
 		}
 
 		function color_phi(kolor){
-			let stosunki = document.querySelectorAll('span');
+			let stosunki = document.querySelectorAll('.ratio');
 
 			for(ratio of stosunki){
 				ratio.removeAttribute('style');
